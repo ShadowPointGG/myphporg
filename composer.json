@@ -1,0 +1,19 @@
+{
+    "name": "jjcode/myphporg",
+    "description": "PHP MVC",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Jjcode\\Myphporg\\": "App\\"
+        }
+    },
+    "authors": [
+        {
+            "name": "ravengamesdev",
+            "email": "jon.james@jonjdigital.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^11.17"
+    }
+}
