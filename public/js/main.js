@@ -6,3 +6,21 @@ function toggleMenu() {
         menuItem.classList.toggle("hidden");
     }
 }
+
+
+
+function placeholderIsSupported() {
+    test = document.createElement('input');
+    return ('placeholder' in test);
+}
+
+$(document).ready(function(){
+    placeholderSupport = placeholderIsSupported() ? 'placeholder' : 'no-placeholder';
+    $('html').addClass(placeholderSupport);
+});
+
+$('.alert').alert()
+
+function closeAlert(){
+    document.getElementById('.alert').alert('close')
+}

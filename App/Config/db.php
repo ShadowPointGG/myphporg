@@ -1,20 +1,8 @@
 <?php
-
-use Illuminate\Database\Capsule\Manager as Capsule;
-
-$capsule = new Capsule;
-
-$capsule->addConnection([
-    'driver' => 'mysql',
-    'host' => DB_HOST,
-    'database' => DB_NAME,
-    'username' => DB_USER,
-    'password' => DB_PASS,
-    'charset' => 'utf8',
-    'collation' => 'utf8_unicode_ci',
-    'prefix' => '',
+$db = ActiveRecord\Config::instance();
+$db->set_connections([
+    'db' => 'mysql://'.DB_USER.':'.DB_PASS.'@'.DB_HOST.'/'.DB_NAME,
 ]);
+$db->set_default_connection('db');
 
-$capsule->setAsGlobal();
-
-return $capsule;
+return $db;

@@ -2,11 +2,9 @@
 
 require '../vendor/autoload.php';
 
-use Illuminate\Database\Capsule\Manager as Capsule;
+date_default_timezone_set('Europe/London');
 
-
-
-
+session_start();
 const VIEWS = "../App/Views/";
 
 global $config;

@@ -5,13 +5,9 @@ namespace Jjcode\Myphporg\Src;
 class Controller
 {
 
-    public $layout = "_default";
+//    public $layout = "_default";
     public $title;
-//    protected function render($view, $data = [])
-//    {
-//        extract($data);
-//        include "Views/$view.php";
-//    }
+
 
     protected function renderView($view, $data = [], $layout = "_default"){
         global $config;
@@ -21,5 +17,15 @@ class Controller
         include VIEWS."/layouts/$layout.php";
 
 
+    }
+
+    protected function redirect($url){
+        header("Location: $url");
+    }
+
+    public function loginCheck(){
+        if(!(isset($_SESSION['user']))){
+            $this->redirect('/login');
+        }
     }
 }

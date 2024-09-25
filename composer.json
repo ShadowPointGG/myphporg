@@ -14,6 +14,6 @@
         }
     ],
     "require": {
-        "illuminate/database": "^11.17"
+        "php-patterns/activerecord": "^2.0"
     }
 }

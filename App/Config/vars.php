@@ -6,7 +6,7 @@
  */
 
 const DB_HOST = "127.0.0.1";
-const DB_NAME = "spgg_tools";
+const DB_NAME = "phpmyorg";
 const DB_USER = "root";
 const DB_PASS = "";
 const APPLICATION_NAME = "My PHP Org";

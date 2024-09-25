@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://F:/SPGG_Dashboard/.idea/SPGG_Dashboard.iml" filepath="F:/SPGG_Dashboard/.idea/SPGG_Dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/myphporg.iml" filepath="$PROJECT_DIR$/.idea/myphporg.iml" />
     </modules>
   </component>
